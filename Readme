@@ -1,0 +1,13 @@
+Project Name and Description:
+
+    GUI Calculator - A simple calculator application with a graphical user interface.
+
+Features:
+
+    basic arithmetic operations (addition, subtraction, multiplication, division), handling decimal numbers, and sign inversion.
+
+Requirements:
+
+    Python 3.11 installed
+    pip 23.1.2 installed
+    developed and tested on macos 12.6.7

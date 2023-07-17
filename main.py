@@ -86,7 +86,12 @@ def c_button():
 def pressed_equal_to_button():
     global operator
     global first_number
-    label_text.set(eval(f"{first_number} {operator} {label_text.get()}"))
+    try:
+        result = eval(f"{first_number} {operator} {label_text.get()}")
+        label_text.set(result)
+    except (ArithmeticError, ValueError) as e:
+      check_input("Invalid Operation")
+
     if len(label_text.get()) > 10:
         check_input("Sorry, the result has more than 10 digits.\n10 digits is the limit.")
 
